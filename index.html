@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Field Groups</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h4>Field Goups</h4>
+    <p>Select from the drop down to view different field groups.<br/>
+    Enter info into "green-1" in order to see "green-2".<br/>
+    Select the second or third option of "blue-1" to view "blue-2" and "blue-3" respectively.</p>
+    <form>
+        <label class="universal"><select id="change_fields">
+            <option value="red">Red</option>
+            <option value="green">Green</option>
+            <option value="blue">Blue</option>
+        </select></label>
+        <br/>
+        <label class="universal">Uni-1 <input type="text"></label>
+        <label class="universal">Uni-2 <input type="text"></label>
+        <br/>
+        <label class="not-universal red">red-1 <input type="text"></label>
+        <label class="not-universal red">red-2 <input type="text"></label>
+
+        <label class="not-universal red green">red-green-1 <input type="text"></label>
+
+        <label class="not-universal green">green-1 <input type="text" id="green-1"></label>
+        <label class="not-universal green requires requires-green-1">green-2 <input type="text"></label>
+
+        <label class="not-universal green blue">blue-green-1 <input type="text"></label>
+        <label class="not-universal green blue">blue-green-2 <input type="text"></label>
+
+        <label class="not-universal blue">blue-1
+            <input type="radio" name="blue-1" value="one" checked>
+            <input type="radio" name="blue-1" value="two">
+            <input type="radio" name="blue-1" value="three">
+        </label>
+        <label class="not-universal blue requires requires-blue-1-two">blue-2 <input type="text"></label>
+        <label class="not-universal blue requires requires-blue-1-three">blue-3 <input type="text"></label>
+    </form>
+    
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>

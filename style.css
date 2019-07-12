@@ -1,0 +1,38 @@
+body {
+    width: 80%;
+    margin: 50px auto;
+}
+
+form {
+    width: 80%;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    padding: 5px;
+}
+
+.red {
+    background: rgb(255, 50, 50);
+}
+
+.red.green {
+    background: rgb(210, 210, 0);
+}
+
+.green {
+    background: rgb(50, 200, 50);
+}
+
+.green.blue {
+    background: rgb(0, 190, 200);
+}
+
+.blue {
+    background: rgb(50, 150, 255);
+}
+
+.green, .blue, .requires {
+    display: none;
+}
